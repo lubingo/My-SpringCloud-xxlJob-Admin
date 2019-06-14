@@ -12,11 +12,11 @@ public enum ExecutorRouteStrategyEnum {
     LAST(I18nUtil.getString("jobconf_route_last"), new ExecutorRouteLast()),
     ROUND(I18nUtil.getString("jobconf_route_round"), new ExecutorRouteRound()),
     RANDOM(I18nUtil.getString("jobconf_route_random"), new ExecutorRouteRandom()),
-    CONSISTENT_HASH(I18nUtil.getString("jobconf_route_consistenthash"), new ExecutorRouteConsistentHash()),
+    /*CONSISTENT_HASH(I18nUtil.getString("jobconf_route_consistenthash"), new ExecutorRouteConsistentHash()),
     LEAST_FREQUENTLY_USED(I18nUtil.getString("jobconf_route_lfu"), new ExecutorRouteLFU()),
     LEAST_RECENTLY_USED(I18nUtil.getString("jobconf_route_lru"), new ExecutorRouteLRU()),
     FAILOVER(I18nUtil.getString("jobconf_route_failover"), new ExecutorRouteFailover()),
-    BUSYOVER(I18nUtil.getString("jobconf_route_busyover"), new ExecutorRouteBusyover()),
+    BUSYOVER(I18nUtil.getString("jobconf_route_busyover"), new ExecutorRouteBusyover()),*/
     SHARDING_BROADCAST(I18nUtil.getString("jobconf_route_shard"), null);
 
     ExecutorRouteStrategyEnum(String title, ExecutorRouter router) {
