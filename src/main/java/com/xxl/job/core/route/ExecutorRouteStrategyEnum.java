@@ -9,10 +9,10 @@ import com.xxl.job.core.util.I18nUtil;
 public enum ExecutorRouteStrategyEnum {
 
     FIRST(I18nUtil.getString("jobconf_route_first"), new ExecutorRouteFirst()),
-    LAST(I18nUtil.getString("jobconf_route_last"), new ExecutorRouteLast()),
+    /*LAST(I18nUtil.getString("jobconf_route_last"), new ExecutorRouteLast()),
     ROUND(I18nUtil.getString("jobconf_route_round"), new ExecutorRouteRound()),
     RANDOM(I18nUtil.getString("jobconf_route_random"), new ExecutorRouteRandom()),
-    /*CONSISTENT_HASH(I18nUtil.getString("jobconf_route_consistenthash"), new ExecutorRouteConsistentHash()),
+    CONSISTENT_HASH(I18nUtil.getString("jobconf_route_consistenthash"), new ExecutorRouteConsistentHash()),
     LEAST_FREQUENTLY_USED(I18nUtil.getString("jobconf_route_lfu"), new ExecutorRouteLFU()),
     LEAST_RECENTLY_USED(I18nUtil.getString("jobconf_route_lru"), new ExecutorRouteLRU()),
     FAILOVER(I18nUtil.getString("jobconf_route_failover"), new ExecutorRouteFailover()),
