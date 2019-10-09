@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.xxl</groupId>
-    <artifactId>job</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>job</name>
+    <artifactId>Task-Admin</artifactId>
+    <version>1.0</version>
+    <name>Task-Admin</name>
     <description>Demo project for xxl job</description>
 
     <properties>
