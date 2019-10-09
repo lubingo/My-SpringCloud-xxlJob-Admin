@@ -32,7 +32,7 @@ public class I18nUtil {
             String i18n = XxlJobAdminConfig.getAdminConfig().getI18n();
             i18n = (i18n!=null && i18n.trim().length()>0)?("_"+i18n):i18n;
             String i18nFile = MessageFormat.format("i18n/message{0}.properties", i18n);
-
+            logger.error(">>>>>>>>>>>>>>>>>>>>>>>>>>>>i18nFile={}",i18nFile);
             // load prop
             Resource resource = new ClassPathResource(i18nFile);
             EncodedResource encodedResource = new EncodedResource(resource,"UTF-8");

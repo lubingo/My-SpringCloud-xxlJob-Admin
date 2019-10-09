@@ -79,6 +79,7 @@ public class XxlJobScheduler implements InitializingBean, DisposableBean {
 
     private void initI18n(){
         for (ExecutorBlockStrategyEnum item:ExecutorBlockStrategyEnum.values()) {
+            logger.info("initI18n 初始化  ={}",item.name());
             item.setTitle(I18nUtil.getString("jobconf_block_".concat(item.name())));
         }
     }
